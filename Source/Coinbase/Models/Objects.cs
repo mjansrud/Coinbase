@@ -111,7 +111,7 @@ namespace Coinbase.Models
         public string Currency { get; set; }
 
         [JsonProperty("email")]
-        public string Email { get; set; }
+        public string? Email { get; set; }
     }
 
    public partial class From : Entity

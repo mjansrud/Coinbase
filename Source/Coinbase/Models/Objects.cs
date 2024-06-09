@@ -101,6 +101,7 @@ namespace Coinbase.Models
       public string Network { get; set; }
    }
 
+    [JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
     public partial class To : Entity
     {
         [JsonProperty("address")]
@@ -108,6 +109,9 @@ namespace Coinbase.Models
 
         [JsonProperty("currency")]
         public string Currency { get; set; }
+
+        [JsonProperty("email")]
+        public string Email { get; set; }
     }
 
    public partial class From : Entity
